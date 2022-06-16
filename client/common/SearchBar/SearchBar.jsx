@@ -1,5 +1,6 @@
 import React, { useRef, useLayoutEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useHotkeys } from '@mantine/hooks';
 import { SearchBarWrapper } from './SearchBar.style.jsx';
 import useWordStore from '../../store/useWordStore.jsx';
 import Pronunciation from '../Pronunciation/Pronunciation.jsx';
@@ -27,6 +28,10 @@ const SearchBar = () => {
       setSearchQuery(val);
     }
   };
+
+  useHotkeys([
+    ['/', () => wordRef.current.focus()],
+  ]);
 
   return (
     <SearchBarWrapper>
