@@ -14,7 +14,7 @@ export const DefinitionsWrapper = styled.div`
     md:sticky 
     top-0   
     py-10  
-    h-screen 
+    md:h-screen 
     overflow-y-auto
     pr-2
   `}
