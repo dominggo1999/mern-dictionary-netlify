@@ -6,7 +6,8 @@ const CustomStyles = createGlobalStyle`
   body {
     ${tw`
       antialiased 
-      overflow-y-scroll
+      overflow-y-scroll 
+      bg-primary 
     `}
   }
 `;
