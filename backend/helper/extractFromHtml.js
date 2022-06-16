@@ -16,3 +16,13 @@ export const getSentenceExamples = async ($, selector) => {
 
   return list;
 };
+
+export const getSynonyms = async ($, selector) => {
+  const list = [];
+  await $(selector).each((i, elem) => {
+    const synonym = $(elem);
+    list.push(convert(synonym.text().trim()));
+  });
+
+  return list;
+};
