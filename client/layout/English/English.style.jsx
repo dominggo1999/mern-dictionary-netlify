@@ -5,12 +5,13 @@ export const EnglishWrapper = styled.div`
     flex 
     flex-col 
     gap-y-4 
-    mt-10
+    mt-4
   `}
 
   b{
     ${tw`
-      font-semibold
+      font-normal
+      text-accent
     `}
   }
 `;
@@ -18,6 +19,7 @@ export const EnglishWrapper = styled.div`
 export const Short = styled.p`
   ${tw`
     text-2xl
+    mb-2
   `}
 `;
 

@@ -7,16 +7,23 @@ export const SynonymsWrapper = styled.div`
     gap-x-3 
     gap-y-5
     flex-wrap 
-    w-full 
+    w-full  
+    mt-8
   `}
 `;
 
 export const SynonymItem = styled.button`
   ${tw`
     capitalize 
-    bg-blue-500 
+    bg-transparent
     px-2 
     py-1 
-    text-white
+    border 
+    border-accent
+    text-accent 
+    rounded-sm 
+    hover:(bg-accent text-primary)
   `}
+
+  transition : background-color ease-in-out 200ms ;
 `;

@@ -9,6 +9,7 @@ export const Sticky = styled.div`
 
 export const DefinitionsWrapper = styled.div`
   ${tw`
+    w-full
     flex 
     flex-col 
     md:sticky 

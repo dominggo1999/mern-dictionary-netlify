@@ -16,7 +16,7 @@ export const DefItem = styled.li`
 
   span{
     ${tw`
-      font-semibold 
+      text-accent
       italic
       min-w-[4rem]
     `}

@@ -14,6 +14,7 @@ export const Icon = styled.button`
     h-full
     flex 
     items-center 
-    text-4xl
+    text-4xl 
+    text-accent
   `}
 `;

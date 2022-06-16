@@ -4,7 +4,9 @@ export const SentencesWrapper = styled.div`
   ${tw`
     md:w-1/2
     w-full
-    py-10  
+    md:py-10
+    mb-10  
+    md:mb-0
   `}
 
   ul{
@@ -13,6 +15,12 @@ export const SentencesWrapper = styled.div`
       flex-col
       gap-y-5
       text-lg
+    `}
+  }
+
+  b{
+    ${tw`
+      text-accent
     `}
   }
 `;

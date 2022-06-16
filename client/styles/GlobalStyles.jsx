@@ -7,7 +7,8 @@ const CustomStyles = createGlobalStyle`
     ${tw`
       antialiased 
       overflow-y-scroll 
-      bg-primary 
+      bg-primary  
+      text-white
     `}
   }
 `;
