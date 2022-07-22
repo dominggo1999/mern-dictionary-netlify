@@ -13,6 +13,7 @@ const SearchBar = () => {
 
   useLayoutEffect(() => {
     setSearchQuery(word);
+    wordRef.current.focus();
   }, [word]);
 
   const searchWord = (e) => {
