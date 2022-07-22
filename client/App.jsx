@@ -4,6 +4,7 @@ import Definitions from './layout/Definitions/Definitions.jsx';
 import useWordStore from './store/useWordStore.jsx';
 import { AppWrapper } from './App.style.jsx';
 import Sentences from './layout/Sentences/Sentences.jsx';
+import { ScrollbarStyle } from './App.style.jsx';
 
 const App = () => {
   const changeWord = useWordStore((state) => state.changeWord);
@@ -14,10 +15,13 @@ const App = () => {
   }, [pathname]);
 
   return (
-    <AppWrapper>
-      <Definitions />
-      <Sentences />
-    </AppWrapper>
+    <>
+      <ScrollbarStyle />
+      <AppWrapper>
+        <Definitions />
+        <Sentences />
+      </AppWrapper>
+    </>
   );
 };
 
