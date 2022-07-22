@@ -25,7 +25,7 @@ const SearchBar = () => {
     const val = e.target.value;
     const onlyAlphabets = /^[a-zA-Z]+$/gi;
 
-    if (onlyAlphabets.test(val) || val === '') {
+    if (onlyAlphabets.test(val.trim()) || val === '') {
       setSearchQuery(val);
     }
   };
