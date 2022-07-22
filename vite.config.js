@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import { VitePWA } from 'vite-plugin-pwa';
 
 import { fileURLToPath } from 'node:url';
 
@@ -20,5 +21,6 @@ export default defineConfig({
         plugins: ['babel-plugin-macros', 'babel-plugin-styled-components'],
       },
     }),
+    VitePWA({ registerType: 'autoUpdate' }),
   ],
 });
